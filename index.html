@@ -10,22 +10,22 @@
 <body>
     <div class="conteiner">
         <div class="calc">
-            <form>
+            <form onsubmit="handlesubmit">
                 <div>
                     <div class="display">
                         <input type="text" name="display">
                     </div>
                     <div>
-                        <select>
-                            <option>Stage 1</option>
-                            <option>Stage 2</option>
-                            <option>Stage 3</option>
+                        <select id="stage">
+                            <option value="stage 1">Stage 1</option>
+                            <option value="stage 2">Stage 2</option>
+                            <option value="stage 3">Stage 3</option>
                         </select>
-                        <select>
-                            <option>Morning/After</option>
-                            <option>Night</option>
+                        <select id="shift">
+                            <option value="morning">Morning/After</option>
+                            <option value="night">Night</option>
                         </select>
-                        <button>Calculate</button>
+                        <button id="button">Calculate</button>
                     </div>
                 </div>
                 <div>
