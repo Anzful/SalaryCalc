@@ -27,7 +27,7 @@ button.addEventListener('click', (ev)=>{
 
             let anhr = 7.1;
 
-            //stage 1 minimum
+            //stage 1 morning minimum
             if(working_hours>=96 && working_hours<120){ 
                 if(pa>=85 && pa<91){
                    anhr = Math.round((anhr+0.6)*100)/100
@@ -46,7 +46,7 @@ button.addEventListener('click', (ev)=>{
                 alert(total_gross)
                 alert(total)
             }
-            //stage 1 avarge
+            //stage 1 morning avarge
             else if(working_hours>=120 && working_hours<144){ 
                 if(pa>=91 && pa<97){
                     anhr = Math.round((anhr+0.9)*100)/100
@@ -79,7 +79,7 @@ button.addEventListener('click', (ev)=>{
                 alert(total)
             }
 
-            //stage 1 overachiever
+            //stage 1 morning overachiever 
              else if(working_hours>=144){
                 if(pa>=97){
                     anhr = Math.round((anhr+1.2)*100)/100
