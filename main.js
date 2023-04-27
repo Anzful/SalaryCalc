@@ -29,108 +29,811 @@ button.addEventListener('click', (ev)=>{
 
             //stage 1 morning minimum
             if(working_hours>=96 && working_hours<120){ 
-                if(pa>=85 && pa<91){
+                if(pa>=85){
                    anhr = Math.round((anhr+0.6)*100)/100
                 }
-                if(sgc>=1000 && sgc<1500){
+                if(sgc>=1000){
                    anhr = Math.round((anhr+0.6)*100)/100
                 }
-                if(reaction_time>=65 && reaction_time<70){
+                if(reaction_time>=65){
                     anhr = Math.round((anhr+0.2)*100)/100
                 }
-                if(game_speed>=70 && game_speed<75){
+                if(game_speed>=70){
                     anhr = Math.round((anhr+0.4)*100)/100
                 }
                 total_gross = Math.round((anhr*working_hours)*100/100)
                 total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
                 alert(total_gross)
                 alert(total)
             }
             //stage 1 morning avarge
             else if(working_hours>=120 && working_hours<144){ 
-                if(pa>=91 && pa<97){
+                if(pa>=91){
                     anhr = Math.round((anhr+0.9)*100)/100
-                 }
-                 if(sgc>=1500 && sgc<2000){
-                    anhr = Math.round((anhr+0.9)*100)/100
-                 }
-                 if(reaction_time>=70 && reaction_time<80){
-                     anhr = Math.round((anhr+0.4)*100)/100
-                 }
-                 if(game_speed>=75 && game_speed<85){
-                     anhr = Math.round((anhr+0.6)*100)/100
-                 }
+                }
+                else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
 
-                 else if(pa>=85 && pa<91){
+                if(sgc>=1500){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(sgc>=1000 && sgc<1500){
                     anhr = Math.round((anhr+0.6)*100)/100
-                 }
-                 else if(sgc>=1000 && sgc<1500){
-                    anhr = Math.round((anhr+0.6)*100)/100
-                 }
-                 else if(reaction_time>=65 && reaction_time<70){
-                     anhr = Math.round((anhr+0.2)*100)/100
-                 }
-                 else if(game_speed>=70 && game_speed<75){
+                }
+
+                if(reaction_time>=70){
                      anhr = Math.round((anhr+0.4)*100)/100
-                 }
+                }
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+               }
+               
+                if(game_speed>=75){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
                 total_gross = Math.round((anhr*working_hours)*100/100)
                 total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
                 alert(total_gross)
                 alert(total)
             }
 
             //stage 1 morning overachiever 
              else if(working_hours>=144){
-                if(pa>=97){
+                 if(pa>=97){
                     anhr = Math.round((anhr+1.2)*100)/100
                  }
-                 if(sgc>=2000){
-                    anhr = Math.round((anhr+1.2)*100)/100
-                 }
-                 if(reaction_time>=80){
-                     anhr = Math.round((anhr+0.6)*100)/100
-                 }
-                 if(game_speed>=85){
-                     anhr = Math.round((anhr+0.8)*100)/100
-                 }
-
                  else if(pa>=91 && pa<97){
                     anhr = Math.round((anhr+0.9)*100)/100
                  }
-                 else if(sgc>=1500 && sgc<2000){
-                    anhr = Math.round((anhr+0.9)*100)/100
-                 }
-                 else if(reaction_time>=70 && reaction_time<80){
-                     anhr = Math.round((anhr+0.4)*100)/100
-                 }
-                 else if(game_speed>=75 && game_speed<85){
-                     anhr = Math.round((anhr+0.6)*100)/100
-                 }
-
                  else if(pa>=85 && pa<91){
                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                 if(sgc>=2000){
+                    anhr = Math.round((anhr+1.2)*100)/100
                  }
                  else if(sgc>=1000 && sgc<1500){
                     anhr = Math.round((anhr+0.6)*100)/100
                  }
-                 else if(reaction_time>=65 && reaction_time<70){
-                     anhr = Math.round((anhr+0.2)*100)/100
+                 else if(sgc>=1500 && sgc<2000){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+
+                 if(reaction_time>=80){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(reaction_time>=70 && reaction_time<80){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                 if(game_speed>=85){
+                     anhr = Math.round((anhr+0.8)*100)/100
                  }
                  else if(game_speed>=70 && game_speed<75){
-                     anhr = Math.round((anhr+0.4)*100)/100
+                    anhr = Math.round((anhr+0.4)*100)/100
                  }
+                 else if(game_speed>=75 && game_speed<85){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100    
+                }
+                else if(roulette_cooperation>=95){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
                 total_gross = Math.round((anhr*working_hours)*100/100)
                 total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
                 alert(total_gross)
                 alert(total)
             }
 
+            else if(working_hours<96){
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
         }
-        
-        
+        if(shift=='night'){
+
+            let anhr = 10.65;
+
+            //stage 1 night minimum
+            if(working_hours>=96 && working_hours<120){ 
+                if(pa>=85){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(sgc>=1000){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(reaction_time>=65){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+                if(game_speed>=70){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+            //stage 1 night avarge
+            else if(working_hours>=120 && working_hours<144){ 
+                if(pa>=91){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(sgc>=1500){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(reaction_time>=70){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+               }
+               
+                if(game_speed>=75){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            //stage 1 night overachiever 
+             else if(working_hours>=144){
+                 if(pa>=97){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(pa>=91 && pa<97){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+                 else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                 if(sgc>=2000){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(sgc>=1500 && sgc<2000){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+
+                 if(reaction_time>=80){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(reaction_time>=70 && reaction_time<80){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                 if(game_speed>=85){
+                     anhr = Math.round((anhr+0.8)*100)/100
+                 }
+                 else if(game_speed>=70 && game_speed<75){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                 }
+                 else if(game_speed>=75 && game_speed<85){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100    
+                }
+                else if(roulette_cooperation>=95){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            else if(working_hours<96){
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+        }
     }
 
-    
+    if(stage=='stage 2'){
+        if(shift=='morning'){
+
+            let anhr = 7.6;
+
+            //stage 2 morning minimum
+            if(working_hours>=96 && working_hours<120){ 
+                if(pa>=85){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(sgc>=1000){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(reaction_time>=65){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+                if(game_speed>=70){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+            //stage 2 morning avarge
+            else if(working_hours>=120 && working_hours<144){ 
+                if(pa>=91){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(sgc>=1500){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(reaction_time>=70){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+               }
+               
+                if(game_speed>=75){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            //stage 2 morning overachiever 
+             else if(working_hours>=144){
+                 if(pa>=97){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(pa>=91 && pa<97){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+                 else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                 if(sgc>=2000){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(sgc>=1500 && sgc<2000){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+
+                 if(reaction_time>=80){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(reaction_time>=70 && reaction_time<80){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                 if(game_speed>=85){
+                     anhr = Math.round((anhr+0.8)*100)/100
+                 }
+                 else if(game_speed>=70 && game_speed<75){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                 }
+                 else if(game_speed>=75 && game_speed<85){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100    
+                }
+                else if(roulette_cooperation>=95){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            else if(working_hours<96){
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+        }
+        if(shift=='night'){
+
+            let anhr = 11.15;
+
+            //stage 2 night minimum
+            if(working_hours>=96 && working_hours<120){ 
+                if(pa>=85){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(sgc>=1000){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(reaction_time>=65){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+                if(game_speed>=70){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+            //stage 2 night avarge
+            else if(working_hours>=120 && working_hours<144){ 
+                if(pa>=91){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(sgc>=1500){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(reaction_time>=70){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+               }
+               
+                if(game_speed>=75){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            //stage 2 night overachiever 
+             else if(working_hours>=144){
+                 if(pa>=97){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(pa>=91 && pa<97){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+                 else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                 if(sgc>=2000){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(sgc>=1500 && sgc<2000){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+
+                 if(reaction_time>=80){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(reaction_time>=70 && reaction_time<80){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                 if(game_speed>=85){
+                     anhr = Math.round((anhr+0.8)*100)/100
+                 }
+                 else if(game_speed>=70 && game_speed<75){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                 }
+                 else if(game_speed>=75 && game_speed<85){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100    
+                }
+                else if(roulette_cooperation>=95){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            else if(working_hours<96){
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+        }
+    }
+
+    if(stage=='stage 3'){
+        if(shift=='morning'){
+
+            let anhr = 8.4;
+
+            //stage 3 morning minimum
+            if(working_hours>=96 && working_hours<120){ 
+                if(pa>=85){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(sgc>=1000){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(reaction_time>=65){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+                if(game_speed>=70){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+            //stage 3 morning avarge
+            else if(working_hours>=120 && working_hours<144){ 
+                if(pa>=91){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(sgc>=1500){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(reaction_time>=70){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+               }
+               
+                if(game_speed>=75){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            //stage 3 morning overachiever 
+             else if(working_hours>=144){
+                 if(pa>=97){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(pa>=91 && pa<97){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+                 else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                 if(sgc>=2000){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(sgc>=1500 && sgc<2000){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+
+                 if(reaction_time>=80){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(reaction_time>=70 && reaction_time<80){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                 if(game_speed>=85){
+                     anhr = Math.round((anhr+0.8)*100)/100
+                 }
+                 else if(game_speed>=70 && game_speed<75){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                 }
+                 else if(game_speed>=75 && game_speed<85){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100    
+                }
+                else if(roulette_cooperation>=95){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            else if(working_hours<96){
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+        }
+        if(shift=='night'){
+
+            let anhr = 11.95;
+
+            //stage 3 night minimum
+            if(working_hours>=96 && working_hours<120){ 
+                if(pa>=85){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(sgc>=1000){
+                   anhr = Math.round((anhr+0.6)*100)/100
+                }
+                if(reaction_time>=65){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+                if(game_speed>=70){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+            //stage 3 night avarge
+            else if(working_hours>=120 && working_hours<144){ 
+                if(pa>=91){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(sgc>=1500){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                }
+                else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(reaction_time>=70){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+               }
+               
+                if(game_speed>=75){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                     anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            //stage 3 night overachiever 
+            else if(working_hours>=144){
+                 if(pa>=97){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(pa>=91 && pa<97){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+                 else if(pa>=85 && pa<91){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+
+                 if(sgc>=2000){
+                    anhr = Math.round((anhr+1.2)*100)/100
+                 }
+                 else if(sgc>=1000 && sgc<1500){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(sgc>=1500 && sgc<2000){
+                    anhr = Math.round((anhr+0.9)*100)/100
+                 }
+
+                 if(reaction_time>=80){
+                     anhr = Math.round((anhr+0.6)*100)/100
+                 }
+                 else if(reaction_time>=70 && reaction_time<80){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                else if(reaction_time>=65 && reaction_time<70){
+                    anhr = Math.round((anhr+0.2)*100)/100
+                }
+
+                if(game_speed>=85){
+                     anhr = Math.round((anhr+0.8)*100)/100
+                }
+                else if(game_speed>=70 && game_speed<75){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+                else if(game_speed>=75 && game_speed<85){
+                    anhr = Math.round((anhr+0.6)*100)/100
+                }
+
+                if(roulette_cooperation>=85 && roulette_cooperation<95){
+                    anhr = Math.round((anhr+0.2)*100)/100    
+                }
+                else if(roulette_cooperation>=95){
+                    anhr = Math.round((anhr+0.4)*100)/100
+                }
+
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+
+            else if(working_hours<96){
+                total_gross = Math.round((anhr*working_hours)*100/100)
+                total = Math.round((total_gross*0.78)*100)/100
+                alert(anhr)
+                alert(working_hours)
+                alert(total_gross)
+                alert(total)
+            }
+        }
+    }
 })
 
 
