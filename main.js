@@ -7,8 +7,9 @@ const F = document.getElementById('button');        //button
 const G = document.getElementById('stage');         //stage
 const H = document.getElementById('shift');         //shift
 const I = document.getElementById('roulette_cooperation')//roulette cooperation
+const out1 = document.getElementById('output');
 
-button.addEventListener('click', (ev)=>{
+F.addEventListener('click', (ev)=>{
     
     const working_hours = parseFloat(A.value);
     const sgc = parseInt(B.value);
@@ -37,12 +38,14 @@ button.addEventListener('click', (ev)=>{
          if(game_speed>=70){
              anhr = Math.round((anhr+0.4)*100)/100
          }
-         total_gross = Math.round((anhr*working_hours)*100/100)
-         total = Math.round((total_gross*0.78)*100)/100
-         alert(anhr)
-         alert(working_hours)
-         alert(total_gross)
-         alert(total)
+        total_gross = Math.round((anhr*working_hours)*100/100)
+        total = Math.round((total_gross*0.78)*100)/100
+        //alert(anhr)
+        //alert(working_hours)
+        //alert(total_gross)
+        //alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
 
          
     }
@@ -82,10 +85,9 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        
+        ev.preventDefault();
+        out1.textContent=total;
     }
     function stage1_morning_overachiever(){
         let anhr=7.1
@@ -139,10 +141,10 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        
+        ev.preventDefault();
+        out1.textContent=total;
+        
     }
     
     function stage1_night_minimum(){
@@ -161,10 +163,8 @@ button.addEventListener('click', (ev)=>{
          }
          total_gross = Math.round((anhr*working_hours)*100/100)
          total = Math.round((total_gross*0.78)*100)/100
-         alert(anhr)
-         alert(working_hours)
-         alert(total_gross)
-         alert(total)
+         ev.preventDefault();
+         out1.textContent=total;
     }
     function stage1_night_avarage(){
         let anhr=10.65
@@ -202,10 +202,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     function stage1_night_overachiever(){
         let anhr=10.65
@@ -259,10 +257,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     
     function stage2_morning_minimum(){
@@ -281,10 +277,8 @@ button.addEventListener('click', (ev)=>{
          }
          total_gross = Math.round((anhr*working_hours)*100/100)
          total = Math.round((total_gross*0.78)*100)/100
-         alert(anhr)
-         alert(working_hours)
-         alert(total_gross)
-         alert(total)
+         ev.preventDefault();
+         out1.textContent=total;
     }
     function stage2_morning_avarage(){
         let anhr=7.6
@@ -322,10 +316,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     function stage2_morning_overachiever(){
         let anhr=7.6
@@ -379,10 +371,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     
     function stage2_night_minimum(){
@@ -401,10 +391,8 @@ button.addEventListener('click', (ev)=>{
          }
          total_gross = Math.round((anhr*working_hours)*100/100)
          total = Math.round((total_gross*0.78)*100)/100
-         alert(anhr)
-         alert(working_hours)
-         alert(total_gross)
-         alert(total)
+         ev.preventDefault();
+         out1.textContent=total;
     }
     function stage2_night_avarage(){
         let anhr=11.15
@@ -442,10 +430,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     function stage2_night_overachiever(){
         let anhr=11.15
@@ -499,10 +485,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     
     function stage3_morning_minimum(){
@@ -521,10 +505,8 @@ button.addEventListener('click', (ev)=>{
          }
          total_gross = Math.round((anhr*working_hours)*100/100)
          total = Math.round((total_gross*0.78)*100)/100
-         alert(anhr)
-         alert(working_hours)
-         alert(total_gross)
-         alert(total)
+         ev.preventDefault();
+         out1.textContent=total;
     }
     function stage3_morning_avarage(){
         let anhr=8.4
@@ -562,10 +544,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     function stage3_morning_overachiever(){
         let anhr=8.4
@@ -619,10 +599,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     
     function stage3_night_minimum(){
@@ -641,10 +619,8 @@ button.addEventListener('click', (ev)=>{
          }
          total_gross = Math.round((anhr*working_hours)*100/100)
          total = Math.round((total_gross*0.78)*100)/100
-         alert(anhr)
-         alert(working_hours)
-         alert(total_gross)
-         alert(total)
+         ev.preventDefault();
+         out1.textContent=total;
     }
     function stage3_night_avarage(){
         let anhr=11.95
@@ -682,10 +658,8 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     function stage3_night_overachiever(){
         let anhr=11.95
@@ -739,19 +713,15 @@ button.addEventListener('click', (ev)=>{
     
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
     
     function no_bonus(){
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.78)*100)/100
-        alert(anhr)
-        alert(working_hours)
-        alert(total_gross)
-        alert(total)
+        ev.preventDefault();
+        out1.textContent=total;
     }
 
 
