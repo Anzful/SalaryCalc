@@ -822,7 +822,7 @@ F.addEventListener('click', (ev)=>{
     if(stage=='stage 3'){
         if(shift=='morning'){
 
-            let anhr = 8.4;
+            let anhr = 8.1;
 
             //stage 3 morning minimum
             if(working_hours>=96 && working_hours<120){ 
