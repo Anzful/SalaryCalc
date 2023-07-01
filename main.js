@@ -490,7 +490,7 @@ F.addEventListener('click', (ev)=>{
     }
     
     function stage3_morning_minimum(){
-        let anhr=8.4
+        let anhr=8.1
         if(pa>=85){
             anhr = Math.round((anhr+0.6)*100)/100
          }
@@ -509,7 +509,7 @@ F.addEventListener('click', (ev)=>{
          out1.textContent=total;
     }
     function stage3_morning_avarage(){
-        let anhr=8.4
+        let anhr=8.1
         if(pa>=91){
             anhr = Math.round((anhr+0.9)*100)/100
         }
@@ -548,7 +548,7 @@ F.addEventListener('click', (ev)=>{
         out1.textContent=total;
     }
     function stage3_morning_overachiever(){
-        let anhr=8.4
+        let anhr=8.1
         if(pa>=97){
             anhr = Math.round((anhr+1.2)*100)/100
          }
