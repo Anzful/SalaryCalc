@@ -717,7 +717,7 @@ F.addEventListener('click', (ev)=>{
         out1.textContent=total;
     }
     
-    function no_bonus(){
+    function no_bonus(anhr){
         total_gross = Math.round((anhr*working_hours)*100/100)
         total = Math.round((total_gross*0.784)*100)/100
         ev.preventDefault();
@@ -745,7 +745,7 @@ F.addEventListener('click', (ev)=>{
             }
 
             else if(working_hours<96){
-                no_bonus()
+                no_bonus(anhr)
             }
         }
         if(shift=='night'){
@@ -767,7 +767,7 @@ F.addEventListener('click', (ev)=>{
             }
 
             else if(working_hours<96){
-                no_bonus()
+                no_bonus(anhr)
             }
         }
     }
@@ -792,7 +792,7 @@ F.addEventListener('click', (ev)=>{
             }
 
             else if(working_hours<96){
-                no_bonus()
+                no_bonus(anhr)
             }
         }
         if(shift=='night'){
@@ -814,7 +814,7 @@ F.addEventListener('click', (ev)=>{
             }
 
             else if(working_hours<96){
-                no_bonus()
+                no_bonus(anhr)
             }
         }
     }
@@ -839,7 +839,7 @@ F.addEventListener('click', (ev)=>{
             }
 
             else if(working_hours<96){
-                no_bonus()
+                no_bonus(anhr)
             }
         }
         if(shift=='night'){
@@ -861,7 +861,7 @@ F.addEventListener('click', (ev)=>{
             }
 
             else if(working_hours<96){
-                no_bonus()
+                no_bonus(anhr)
             }
         }
     }
